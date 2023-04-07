@@ -1,0 +1,122 @@
+*{
+    background:linear-gradient(#ff0000,#ff0080,#ff00bf);
+}
+img{
+    width:300px;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    margin-left:2px;
+    position:relative;
+}
+.box{
+    margin-bottom: -70px;
+    margin-left: 2.5px;
+}
+p{
+    background-color: black;
+    color:white;
+    padding:10px;
+    text-align: center;
+    width:fit-content;
+    border-radius: 0 50px 0 0;
+    position:relative;
+    top:-58px;
+    padding-right: 50px;
+}
+.collection{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.headers{
+    display:flex;
+    justify-content: center;
+    box-shadow: 0 0 5px red;
+    padding:20px 0 0px 0;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+.icon{
+    border:0;
+    box-shadow: none;
+    width:100px;
+    background: transparent;
+}
+h1{
+    font-weight: bold;
+    margin:0 20px;
+    font-size:100px;
+    position:relative;
+    top:-20px;
+    text-decoration: underline;
+    background: transparent;
+    font-family: sans-serif;
+    color:pink;
+    
+}
+.container{
+    position:fixed;
+    inset:0;
+    width:100%;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    transition:all .5;
+    display: none;         
+}
+.container video{
+    position:relative;
+    width:80%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius:10px;
+    outline:0;
+    object-fit:cover;
+}
+.container img{
+    background-color: palevioletred;
+    padding:10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 140px;
+    top: 55px;
+    width: 20px;
+    opacity: .6;
+    /* display:none; */
+}
+.container video:hover + img{
+    display:block;
+}
+.container img:hover{
+    background: red;
+}
+.first-video{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.first-video video{
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    
+
+}
+@media only screen and (max-width:900px) {
+    
+.container{
+    box-sizing:border-box;
+    width:100;         
+}
+.container img{
+    right: 65px;
+    width: 20px;
+}
+img{
+    width:300px;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    margin-left:2px;
+    position:relative;
+}
+}

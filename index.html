@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+    <div class="headers">
+    <img class="icon" src="icon.png" alt="">
+    <h1><span>&#213;</span>linone</h1>
+    <img class="icon" src="icon.png" alt="">
+</div>
+<div class="first-video">
+    <video src="media/Anybody.mp4" autoplay muted loop></video>
+    <video src="media/GIVE.mp4" autoplay muted loop></video>
+    <video src="media/Lena.mp4" autoplay muted loop></video>
+    <video src="media/Name.mp4" autoplay muted loop></video>
+</div>
+    <div class="collection">
+        <div class="box">
+           <img src="images/13.jpg" alt="" onclick="play('media/1.mp4')">
+            <p>My Home</p>
+        </div>
+        <div class="box">
+            <img src="images/14.jpg" alt="" onclick="play('media/2.mp4')">
+            <p>My Home</p>
+        </div>
+        <div class="box">
+            <img src="images/15.jpg" alt="" onclick="play('media/3.mp4')">
+            <p>My Home</p>
+        </div>
+        <div class="box">
+            <img src="images/16.jpg" alt="" onclick="play('media/4.mp4')">
+            <p>My Home</p>
+        </div>
+        <div class="box">
+        <img src="images/17.jpg" alt="" onclick="play('media/5.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/18.jpg" alt="" onclick="play('media/6.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/19.jpg" alt="" onclick="play('media/6.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/20.jpg" alt="" onclick="play('media/7.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/2.jpg" alt="" onclick="play('media/8.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/18.jpg" alt="" onclick="play('media/9.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/17.jpg" alt="" onclick="play('media/10.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/eight.jpg" alt="" onclick="play('media/11.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/eleven.jpg" alt="" onclick="play('media/12.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/16.jpg" alt="" onclick="play('media/12.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/15.jpg" alt="" onclick="play('media/13.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/14.jpg" alt="" onclick="play('media/14.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/13.jpg" alt="" onclick="play('media/15.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/11.jpg" alt="" onclick="play('media/1.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/10.jpg" alt="" onclick="play('media/1.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/1.jpg" alt="" onclick="play('media/18.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/eleven.jpg" alt="" onclick="play('media/19.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/five.jpg" alt="" onclick="play('media/20.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/four.jpg" alt="" onclick="play('media/21.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/nine.jpg" alt="" onclick="play('media/22.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/six.jpg" alt="" onclick="play('media/23.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/ten.jpg" alt="" onclick="play('media/24.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/three.jpg" alt="" onclick="play('media/25.mp4')">
+        <p>My Home</p>
+    </div>
+        <div class="box">
+        <img src="images/seven.jpg" alt="" onclick="play('media/26.mp4')">
+        <p>My Home</p>
+</div>
+</div>
+<br><br><br>
+    <div class="container" id="videoBox" >
+      
+            <video src="images/ads.mp4" controls id="myVideo" autoplay ></video>
+       
+            <img src="R.png" alt="" onclick="cancel()">
+        
+    </div>
+    <script>
+        var videoBox = document.getElementById("videoBox");
+        var myVideo = document.getElementById("myVideo");
+        function cancel(){
+            videoBox.style.display = "none";
+        }
+        function play(file){
+            myVideo.src = file;
+            videoBox.style.display = "block";
+        }
+     </script>   
+<br><br><br>
+</body>
+</html>
